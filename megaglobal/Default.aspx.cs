@@ -16,7 +16,7 @@ namespace megaglobal
 
     protected void btnRegister_Click(object sender, EventArgs e)
     {
-      //string loginString = Security.GetHash512(txtUserid.Text, txtCpassword.Text);
+      string loginString = Security.GetHash512(txtUserid.Text, txtCpassword.Text);
 
       DAL aLayer = new DAL();
       aLayer.userRegister(txtFirstname.Text, txtUserid.Text, txtCpassword.Text);
