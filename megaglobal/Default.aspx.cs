@@ -19,7 +19,7 @@ namespace megaglobal
       string loginString = Security.GetHash512(txtUserid.Text, txtCpassword.Text);
 
       DAL aLayer = new DAL();
-      aLayer.userRegister(txtFirstname.Text, txtUserid.Text, txtCpassword.Text);
+      aLayer.userRegister(txtFirstname.Text, txtUserid.Text, loginString);
 
      txtFirstname.Text = "";
 
