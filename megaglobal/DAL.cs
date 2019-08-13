@@ -12,7 +12,7 @@ namespace megaglobal
 
   {
 
-    string connectionstring = ConfigurationManager.ConnectionStrings["dblogindemo"].ConnectionString;
+    string connectionstring = ConfigurationManager.ConnectionStrings["dbMegaglobal"].ConnectionString;
     SqlConnection connection;
     public void userRegister(string firstname, string username, string password)
     {

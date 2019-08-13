@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="megaglobal.register" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="megaglobal.register" %>
 
 <!DOCTYPE html>
 
@@ -41,14 +41,14 @@
                     <td class="auto-style4">Firstname</td>
                     <td class="auto-style5">
                         <asp:TextBox ID="txtFirstname" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Firstname required" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Firstname required" ForeColor="#FF3300" ControlToValidate="txtFirstname"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style4">User ID</td>
                     <td class="auto-style5">
                         <asp:TextBox ID="txtUserid" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="User ID required" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="User ID required" ForeColor="#FF3300" ControlToValidate="txtUserid"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -66,7 +66,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style3" colspan="2">
-                        <asp:Button ID="btnRegister" runat="server" Text="Register" Width="268px" />
+                        <asp:Button ID="btnRegister" runat="server" Text="Register" Width="268px" OnClick="btnRegister_Click" />
                     </td>
                 </tr>
             </table>
