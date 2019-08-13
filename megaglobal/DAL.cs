@@ -18,7 +18,7 @@ namespace megaglobal
     {
       connection = new SqlConnection(connectionstring);
       connection.Open();
-      string query = "insert into tbl_user values('" + username + "','" + password + "')";
+      string query = "insert into tbl_user values('" + firstname + "','" + username + "','" + password + "')";
 
       SqlCommand command = new SqlCommand(query, connection);
 
